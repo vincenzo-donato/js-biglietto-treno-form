@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno BooleanTrain</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- start sezione con form inserimento info  -->
+    <div class="container">
+
+        <h1>inserisci i tuoi dati e la destinazione per ricevere il biglietto</h1>
+        
+        <!-- container form  -->
+        <div class="container-form">
+
+            <!-- start first row -->
+            <div class="row-form">
+                <!-- col first row    -->
+                <div class="col">
+                    <label for="nome">Inserisci il tuo Nome </label>
+                    <input  id="nome" type="text" placeholder="Inserisci il tuo nome" id="">
+                </div>
+
+                <div class="col">
+                    <label for="km"> KM da percorrere </label>
+                    <input value="km" id="km" type="number" placeholder="Inserisci Km" id="">
+                </div>
+
+                <div class="col">
+                    <label for="eta">Categoria d'età</label>
+                    <select name="" id="eta">
+                        <option value="minorenne">Minorenne (0-17) </option>
+                        <option value="maggiorenne">Maggiorenne (18 +)</option>
+                        <option value="senior">Senior (65+)</option>
+                    </select>
+                </div>
+                
+                <!-- end col first row  -->
+            </div>
+            <!-- end first row -->
+
+            <!-- start second row  -->
+            <div class="row">
+                <!-- button second row  -->
+                <input class="btn" type="button" id="btnConferma" value="Conferma">
+                <input class="btn" type="button" id="btnAnnulla" value="Annulla">
+                <!-- end button second row  -->
+            </div>
+            <!-- end second row  -->
+
+        </div>
+        <!-- /container form  -->
+
+        
+    </div>
+    <!-- end sezione con form inserimento info  -->
+
+    <!-- start sezione stampa biglietto  -->
+    <h2>Questo è il tuo biglietto</h2>
+
+    <div class="opacity" id="biglietto">
+    
+        <h3>Dati passeggero</h3>
+        <hr>
+    
+        <!-- start container pass  -->
+        <div class="container-passeggero">
+
+            <div id="nomPasseggiero">
+                <h3>Nome del passeggero</h3>
+                <h4 id="nomeScelto" ></h4>
+            </div>
+            
+            <!-- container dati stampa biglietto  -->
+            <div id="container-table">
+
+                <div class="container-info"> 
+                    <h3>Offerta</h3> 
+                    <span id="offerta"></span>
+                </div>
+
+                <div class="container-info"> 
+                    <h3>Carrozza</h3>
+                    <span id="carrozza" ></span> 
+                </div>
+
+                <div class="container-info"> 
+                    <h3>CodiceCP</h3>
+                    <span id="codiceCp" ></span> 
+                </div>
+
+                <div class="container-info"> 
+                    <h3>Costo tratta</h3>
+                    <span id="costo" ></span> 
+                </div>
+
+            </div>
+            <!-- end container dati stampa biglietto -->
+        
+
+        </div>
+        <hr>
+        <!-- end container pass -->
+
+    </div>
+    <!-- end sezione stampa biglietto  -->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* codice css per tutto  html  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* codice css stile applicato body  */
+body{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+/* inizio codice stile contenuti  body */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* inizio codice stile per container insemiento dati  */
+.container-form{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px rgba(19, 18, 18, 0.3);
+    background-color: #fff;
+    color: black;
+}
+
+/* prima stile righa */
+.row-form{
+    display: flex;
+    justify-content: center;
+}
+
+/* seconda stile righa */
+.row{
+    text-align: center;
+}
+
+/* cod css stile col generico */
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+/* cod per stile input e selection */
+input,
+select{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input:focus,
+select:focus{
+    color: white;
+    background-color: rgb(8, 178, 235);
+}
+
+/* cod per stile btn  */
+.btn{
+    padding: 3px;
+    border: 1px solid grey;
+    color: white;
+    background-color: rgb(8, 178, 235);
+}
+
+.btn:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+/* fine codice per container insemiento dati  */
+
+/* inizio cod stile per sezione di sezione stampa biglietto  */
+h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* cod per stile container biglietto  */
+#biglietto{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(19, 18, 18, 0.3);
+    background-color: #fff;
+    color: black;
+}
+
+.opacity{
+    opacity: 0;
+}
+
+/* cod per stile container container passeggero */
+.container-passeggero{
+    display: flex;
+}
+
+/* h3 container pass  */
+#nomPasseggiero{
+    width: 100px;
+    height: 76px;
+    text-align: center;
+    background-color: grey;
+}
+
+/* conatiner per la tabella fatta da me  */
+#container-table{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* conatiner per le info biglietto dentro la tabella  */
+.container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-info h3{
+    margin-bottom: 20px;
+}
+
+/* stampa o cancella i parametri e il biglietto   */
+.stampa-biglietto{
+    opacity: 1;
+}
+
+.cancella-biglietto{
+    opacity: 0;
+    transition: 0.5s;
+}
+
